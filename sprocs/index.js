@@ -75,6 +75,7 @@ module.exports = {
             'config_select.sql',
             'users_select_or_insert.sql',
             'dump_to_csv.sql',
+            'sproc-testing_boundaries_by_date.sql',
         ], function(filename, callback) {
             logger.verbose('Loading ' + filename);
             fs.readFile(path.join(__dirname, filename), 'utf8', function(err, sql) {
